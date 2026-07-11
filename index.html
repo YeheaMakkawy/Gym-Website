@@ -7,8 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link
     rel="stylesheet"
@@ -20,7 +19,7 @@
 
 <body>
 
-<header>
+<header id="siteHeader">
 
 <div class="container">
 
@@ -30,12 +29,12 @@ Fit<span>Zone</span>
 
 <nav id="nav">
 
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#programs">Programs</a>
-<a href="#trainers">Trainers</a>
-<a href="#pricing">Pricing</a>
-<a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="Pages/about.html">About</a>
+<a href="Pages/programs.html">Programs</a>
+<a href="Pages/trainers.html">Trainers</a>
+<a href="Pages/pricing.html">Pricing</a>
+<a href="Pages/contact.html">Contact</a>
 
 </nav>
 
@@ -47,144 +46,88 @@ Fit<span>Zone</span>
 
 </header>
 
+<!-- ================= Hero ================= -->
 <section class="hero" id="home">
 
-<div class="overlay"></div>
-
 <div class="hero-content">
+
+<span class="eyebrow">Open 24/7 — Cairo</span>
 
 <h1>
 BUILD YOUR <span>BEST BODY</span>
 </h1>
 
 <p>
-Train with professional coaches and achieve your dream physique.
+Train with professional coaches, modern equipment, and a program built
+around your goals — not a generic plan.
 </p>
 
-<a href="#pricing" class="btn">
-Join Now
-</a>
+<div class="hero-actions">
+<a href="Pages/pricing.html" class="btn">Join Now</a>
+<a href="Pages/programs.html" class="btn-ghost">View Programs</a>
+</div>
+
+<div class="hero-stats">
+<div>
+<h3>1200+</h3>
+<span>Members</span>
+</div>
+<div>
+<h3>35+</h3>
+<span>Trainers</span>
+</div>
+<div>
+<h3>15+</h3>
+<span>Years</span>
+</div>
+<div>
+<h3>24/7</h3>
+<span>Access</span>
+</div>
+</div>
 
 </div>
 
 </section>
 
-<section class="about" id="about">
+<div class="tape-divider"></div>
+
+<!-- ================= Highlights ================= -->
+<section class="highlights">
 
 <div class="container">
-
-<div class="about-image">
-
-<img src="images/about.jpg">
-
-</div>
-
-<div class="about-text">
-
-<h2>About Our Gym</h2>
-
-<p>
-
-FitZone is a modern fitness center designed to help you become stronger,
-healthier and more confident.
-
-</p>
-
-<div class="features">
-
-<div>
-
-<i class="fa-solid fa-dumbbell"></i>
-
-<h4>Modern Equipment</h4>
-
-</div>
-
-<div>
-
-<i class="fa-solid fa-heart-pulse"></i>
-
-<h4>Healthy Lifestyle</h4>
-
-</div>
-
-<div>
-
-<i class="fa-solid fa-user-group"></i>
-
-<h4>Expert Trainers</h4>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="programs" id="programs">
 
 <div class="title">
-
-<h2>Our Programs</h2>
-
+<span class="eyebrow">Why FitZone</span>
+<h2>Why Train With Us</h2>
+<p>Everything you need to train hard and stay consistent, under one roof.</p>
 </div>
 
-<div class="container">
+<div class="highlights-grid">
 
-<div class="card">
-
+<div class="highlight">
 <i class="fas fa-dumbbell"></i>
-
-<h3>Body Building</h3>
-
-<p>
-Build muscles with professional plans.
-</p>
-
+<h3>Modern Equipment</h3>
+<p>A full floor of maintained, up-to-date machines and free weights.</p>
 </div>
 
-<div class="card">
-
-<i class="fas fa-fire"></i>
-
-<h3>Fat Burn</h3>
-
-<p>
-
-Burn calories with intense workouts.
-
-</p>
-
+<div class="highlight">
+<i class="fas fa-user-tie"></i>
+<h3>Expert Trainers</h3>
+<p>Certified coaches who build your plan and check your form.</p>
 </div>
 
-<div class="card">
-
-<i class="fas fa-running"></i>
-
-<h3>Cardio</h3>
-
-<p>
-
-Improve endurance and stamina.
-
-</p>
-
+<div class="highlight">
+<i class="fas fa-clock"></i>
+<h3>Flexible Hours</h3>
+<p>Open around the clock, so training fits your schedule, not ours.</p>
 </div>
 
-<div class="card">
-
+<div class="highlight">
 <i class="fas fa-apple-alt"></i>
-
-<h3>Nutrition</h3>
-
-<p>
-
-Healthy meal plans by experts.
-
-</p>
+<h3>Personal Plans</h3>
+<p>Training and nutrition guidance tailored to your goals.</p>
+</div>
 
 </div>
 
@@ -192,201 +135,78 @@ Healthy meal plans by experts.
 
 </section>
 
-<section class="stats">
+<!-- ================= Stats ================= -->
+<section class="home-stats">
 
 <div class="container">
 
-<div>
-
+<div class="stat-box">
 <h2>1200+</h2>
-
-<p>Members</p>
-
+<span>Happy Members</span>
 </div>
 
-<div>
-
+<div class="stat-box">
 <h2>35+</h2>
-
-<p>Trainers</p>
-
+<span>Professional Trainers</span>
 </div>
 
-<div>
-
-<h2>15</h2>
-
-<p>Years Experience</p>
-
+<div class="stat-box">
+<h2>15+</h2>
+<span>Years Experience</span>
 </div>
 
-<div>
-
+<div class="stat-box">
 <h2>24/7</h2>
-
-<p>Open</p>
-
+<span>Gym Access</span>
 </div>
 
 </div>
 
 </section>
 
-<section class="trainers" id="trainers">
+<div class="tape-divider"></div>
 
-<div class="title">
-
-<h2>Professional Trainers</h2>
-
-</div>
-
-<div class="container">
-
-<div class="trainer">
-
-<img src="images/trainer1.jpg">
-
-<h3>John Carter</h3>
-
-<p>Fitness Coach</p>
-
-</div>
-
-<div class="trainer">
-
-<img src="images/trainer2.jpg">
-
-<h3>Emily Stone</h3>
-
-<p>Yoga Trainer</p>
-
-</div>
-
-<div class="trainer">
-
-<img src="images/trainer3.jpg">
-
-<h3>Michael Lee</h3>
-
-<p>Bodybuilding</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="pricing" id="pricing">
-
-<div class="title">
-
-<h2>Membership Plans</h2>
-
-</div>
-
-<div class="container">
-
-<div class="price">
-
-<h3>Basic</h3>
-
-<h1>$29</h1>
-
-<p>Monthly</p>
-
-<ul>
-
-<li>Gym Access</li>
-
-<li>Locker</li>
-
-<li>Free WiFi</li>
-
-</ul>
-
-<a href="#">Choose Plan</a>
-
-</div>
-
-<div class="price active">
-
-<h3>Premium</h3>
-
-<h1>$49</h1>
-
-<p>Monthly</p>
-
-<ul>
-
-<li>Gym Access</li>
-
-<li>Trainer</li>
-
-<li>Nutrition Plan</li>
-
-<li>All Classes</li>
-
-</ul>
-
-<a href="#">Choose Plan</a>
-
-</div>
-
-<div class="price">
-
-<h3>VIP</h3>
-
-<h1>$79</h1>
-
-<p>Monthly</p>
-
-<ul>
-
-<li>Everything Included</li>
-
-<li>Personal Coach</li>
-
-<li>Diet Plan</li>
-
-<li>Priority Support</li>
-
-</ul>
-
-<a href="#">Choose Plan</a>
-
-</div>
-
-</div>
-
-</section>
-
+<!-- ================= Contact ================= -->
 <section class="contact" id="contact">
 
 <div class="container">
 
 <div class="contact-info">
 
+<span class="eyebrow">Get In Touch</span>
 <h2>Contact Us</h2>
 
-<p>Email: info@fitzone.com</p>
+<p>Have a question about membership or training plans? Send us a message
+and a coach will get back to you.</p>
 
-<p>Phone: +20 100 000 0000</p>
+<div class="contact-line">
+<i class="fas fa-envelope"></i>
+<span>info@fitzone.com</span>
+</div>
+
+<div class="contact-line">
+<i class="fas fa-phone"></i>
+<span>+20 100 000 0000</span>
+</div>
+
+<div class="contact-line">
+<i class="fas fa-location-dot"></i>
+<span>Cairo, Egypt</span>
+</div>
 
 </div>
 
-<form>
+<form id="contactForm">
 
-<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Your Name" name="name" required>
 
-<input type="email" placeholder="Your Email">
+<input type="email" placeholder="Your Email" name="email" required>
 
-<textarea placeholder="Your Message"></textarea>
+<textarea placeholder="Your Message" name="message" required></textarea>
 
-<button>
+<button type="submit">Send Message</button>
 
-Send Message
-
-</button>
+<p class="form-status" id="formStatus"></p>
 
 </form>
 
@@ -394,13 +214,61 @@ Send Message
 
 </section>
 
+<!-- ================= Footer ================= -->
 <footer>
 
-<p>
+<div class="container">
 
-© 2026 FitZone Gym. All Rights Reserved.
+<div class="footer-grid">
 
-</p>
+<div class="footer-brand">
+<div class="logo">Fit<span>Zone</span></div>
+<p>A modern fitness center built to help you get stronger, healthier,
+and more confident — one session at a time.</p>
+<div class="footer-social">
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+</div>
+</div>
+
+<div class="footer-col">
+<h4>Explore</h4>
+<ul>
+<li><a href="Pages/about.html">About</a></li>
+<li><a href="Pages/programs.html">Programs</a></li>
+<li><a href="Pages/trainers.html">Trainers</a></li>
+<li><a href="Pages/pricing.html">Pricing</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h4>Support</h4>
+<ul>
+<li><a href="Pages/contact.html">Contact</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#terms">Terms</a></li>
+<li><a href="#privacy">Privacy</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h4>Visit</h4>
+<ul>
+<li><a href="#">info@fitzone.com</a></li>
+<li><a href="#">+20 100 000 0000</a></li>
+<li><a href="#">Cairo, Egypt</a></li>
+<li><a href="#">Open 24/7</a></li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 FitZone Gym. All Rights Reserved.</p>
+</div>
 
 </footer>
 

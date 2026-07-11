@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing — FitZone</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/pricing.css">
+</head>
+<body>
+
+<!-- ================= Pricing ================= -->
+<section class="pricing" id="pricing">
+    <div class="container">
+
+        <div class="title">
+            <span class="eyebrow">Membership</span>
+            <h2>Membership Plans</h2>
+            <p>Pick a plan, walk in, start training. No hidden fees.</p>
+        </div>
+
+        <div class="billing-toggle">
+            <span class="on" data-label="monthly">Monthly</span>
+            <button
+                type="button"
+                class="switch"
+                id="billingSwitch"
+                role="switch"
+                aria-checked="false"
+                aria-label="Toggle annual billing"
+            ></button>
+            <span data-label="annual">Annually</span>
+            <span class="save-tag">2 months free</span>
+        </div>
+
+        <div class="container price-grid">
+
+            <div class="price">
+                <h3>Basic</h3>
+                <h1><sup>$</sup><span class="amount" data-monthly="29" data-annual="24">29</span></h1>
+                <p>per month</p>
+                <ul>
+                    <li>Gym Access</li>
+                    <li>Locker</li>
+                    <li>Free WiFi</li>
+                </ul>
+                <a href="#">Choose Plan</a>
+            </div>
+
+            <div class="price active">
+                <span class="badge">Most Popular</span>
+                <h3>Premium</h3>
+                <h1><sup>$</sup><span class="amount" data-monthly="49" data-annual="41">49</span></h1>
+                <p>per month</p>
+                <ul>
+                    <li>Gym Access</li>
+                    <li>Personal Trainer</li>
+                    <li>Nutrition Plan</li>
+                    <li>All Classes</li>
+                </ul>
+                <a href="#">Choose Plan</a>
+            </div>
+
+            <div class="price">
+                <h3>VIP</h3>
+                <h1><sup>$</sup><span class="amount" data-monthly="79" data-annual="66">79</span></h1>
+                <p>per month</p>
+                <ul>
+                    <li>Everything Included</li>
+                    <li>Personal Coach</li>
+                    <li>Diet Plan</li>
+                    <li>Priority Support</li>
+                </ul>
+                <a href="#">Choose Plan</a>
+            </div>
+
+        </div>
+
+        <p class="pricing-note"><i class="fas fa-check"></i>No contracts — cancel anytime</p>
+
+    </div>
+</section>
+
+<script src="../JS/main.js"></script>
+<script src="../JS/pricing.js"></script>
+</body>
+</html>

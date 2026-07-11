@@ -1,0 +1,399 @@
+/* ===========================================================
+   FitZone — Contact page
+=========================================================== */
+
+
+/* ---------- Page banner ---------- */
+
+.page-banner{
+    padding:170px 0 90px;
+    text-align:center;
+    background:
+        radial-gradient(circle at 85% 0%, var(--orange-dim), transparent 45%),
+        var(--black);
+    border-bottom:1px solid var(--border);
+}
+
+.page-banner .eyebrow{
+    justify-content:center;
+}
+
+.page-banner h1{
+    font-family:var(--font-display);
+    font-weight:400;
+    letter-spacing:.01em;
+    text-transform:uppercase;
+    font-size:54px;
+    line-height:1.05;
+    margin-bottom:18px;
+}
+
+.page-banner h1 span{
+    color:var(--orange);
+}
+
+.page-banner p{
+    max-width:520px;
+    margin:auto;
+    color:var(--muted);
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* ---------- Contact info cards (membership-card styling) ---------- */
+
+.contact-cards{
+    padding:70px 0 0;
+    background:var(--black);
+}
+
+.cards-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:22px;
+    margin-top:-118px;
+    position:relative;
+    z-index:3;
+}
+
+.info-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:30px 26px;
+    position:relative;
+    transition:.35s ease;
+}
+
+.info-card::before{
+    content:"";
+    position:absolute;
+    top:-8px;
+    left:26px;
+    width:16px;
+    height:16px;
+    background:var(--black);
+    border:1px solid var(--border);
+    border-radius:50%;
+}
+
+.info-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--orange);
+    box-shadow:0 20px 40px rgba(255,77,28,.12);
+}
+
+.info-card i{
+    font-size:24px;
+    color:var(--orange);
+    margin-bottom:22px;
+    display:block;
+}
+
+.info-card h4{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--muted-dim);
+    margin-bottom:10px;
+}
+
+.info-card p{
+    color:var(--white);
+    font-size:16px;
+    font-weight:500;
+    line-height:1.5;
+}
+
+.info-card p small{
+    display:block;
+    margin-top:4px;
+    color:var(--muted);
+    font-size:13px;
+    font-weight:400;
+}
+
+/* ---------- Main: form + side panel ---------- */
+
+.contact-main{
+    padding:100px 0 110px;
+    background:var(--black);
+}
+
+.contact-main .container{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:40px;
+    align-items:start;
+}
+
+.form-panel{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:46px;
+}
+
+.form-panel h2{
+    font-family:var(--font-display);
+    font-weight:400;
+    letter-spacing:.01em;
+    text-transform:uppercase;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.form-panel > p{
+    color:var(--muted);
+    font-size:14.5px;
+    margin-bottom:30px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.form-panel input,
+.form-panel select,
+.form-panel textarea{
+    width:100%;
+    margin-bottom:18px;
+    padding:15px 16px;
+    border:1px solid var(--border);
+    outline:none;
+    background:var(--black-soft);
+    color:var(--white);
+    border-radius:8px;
+    font-size:14.5px;
+    font-family:var(--font-body);
+    transition:border-color .3s ease;
+}
+
+.form-panel select{
+    appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'><path fill='%239a9791' d='M1 1l6 6 6-6'/></svg>");
+    background-repeat:no-repeat;
+    background-position:right 16px center;
+    cursor:pointer;
+}
+
+.form-panel input::placeholder,
+.form-panel textarea::placeholder{
+    color:var(--muted-dim);
+}
+
+.form-panel input:focus,
+.form-panel select:focus,
+.form-panel textarea:focus{
+    border-color:var(--orange);
+}
+
+.form-panel textarea{
+    height:140px;
+    resize:none;
+}
+
+.form-panel button{
+    border:none;
+    padding:16px;
+    width:100%;
+    background:var(--orange);
+    color:var(--black);
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    border-radius:8px;
+    transition:.3s ease;
+}
+
+.form-panel button:hover{
+    background:var(--orange-bright);
+}
+
+.form-status{
+    margin-top:14px;
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    color:var(--orange);
+    min-height:16px;
+}
+
+/* ---------- Side panel: map + hours + socials ---------- */
+
+.side-panel{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.map-frame{
+    border:1px solid var(--border);
+    border-radius:14px;
+    overflow:hidden;
+    height:230px;
+    filter:grayscale(1) invert(.92) contrast(.9);
+}
+
+.map-frame iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+}
+
+.hours-card,
+.social-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:30px 32px;
+}
+
+.hours-card h4,
+.social-card h4{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--muted-dim);
+    margin-bottom:18px;
+}
+
+.hours-row{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 0;
+    border-bottom:1px solid var(--border);
+    font-size:14px;
+}
+
+.hours-row:last-child{
+    border-bottom:none;
+}
+
+.hours-row span:first-child{
+    color:var(--white);
+}
+
+.hours-row span:last-child{
+    color:var(--muted);
+    font-family:var(--font-mono);
+    font-size:13px;
+}
+
+.social-card .footer-social{
+    margin-top:4px;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq{
+    padding:100px 0 130px;
+    background:var(--black-soft);
+    border-top:1px solid var(--border);
+}
+
+.faq-list{
+    max-width:800px;
+    margin:auto;
+}
+
+.faq-item{
+    border-bottom:1px solid var(--border);
+}
+
+.faq-item:first-child{
+    border-top:1px solid var(--border);
+}
+
+.faq-q{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:none;
+    border:none;
+    text-align:left;
+    padding:26px 4px;
+    cursor:pointer;
+    color:var(--white);
+}
+
+.faq-q .faq-index{
+    font-family:var(--font-mono);
+    font-size:13px;
+    color:var(--orange);
+    flex:none;
+}
+
+.faq-q span.faq-text{
+    flex:1;
+    font-size:16px;
+    font-weight:500;
+}
+
+.faq-q i{
+    color:var(--muted);
+    transition:transform .3s ease;
+    flex:none;
+}
+
+.faq-item.open .faq-q i{
+    transform:rotate(45deg);
+    color:var(--orange);
+}
+
+.faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+}
+
+.faq-a p{
+    color:var(--muted);
+    font-size:14.5px;
+    line-height:1.8;
+    padding:0 4px 26px 42px;
+    max-width:60ch;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:991px){
+
+    .contact-main .container{
+        grid-template-columns:1fr;
+    }
+
+    .cards-grid{
+        margin-top:40px;
+    }
+
+    .page-banner{
+        padding:150px 0 60px;
+    }
+
+}
+
+@media (max-width:640px){
+
+    .page-banner h1{
+        font-size:38px;
+    }
+
+    .form-panel{
+        padding:32px 24px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .faq-a p{
+        padding-left:4px;
+    }
+
+}
